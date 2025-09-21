@@ -1,0 +1,23 @@
+.gallery{
+    background-image: url(/img1.jpg) ;
+    background-size: cover;
+    
+}
+h1{
+    color: darkcyan;
+    text-align: center;
+    
+}
+div{
+    height:800px;
+    display: flex ;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+img{
+        height: 100px;
+        
+        
+    }
+

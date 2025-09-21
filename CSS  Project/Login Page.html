@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login Page</title>
+    <style>
+            div
+            {  
+                border:5px solid black;
+                width:fit-content;
+                margin:auto;
+                padding:50px;
+            }
+            input
+            {
+                border:2px solid black;
+                margin-bottom:10px;
+            }    
+            h1
+            {
+                margin-left:45px;
+            }
+            button
+            {
+                border-radius:10px;
+                font-size:20px;
+                width:200px;
+            }
+            h4
+            {
+                color:grey;
+            }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 style="color:black;">Login</h1>
+        <input type="text" placeholder="Username:" fdprocessedid="cabn1"><br>
+        <input type="password" placeholder="Password:" fdprocessedid="c73iy">
+        <h4>Forget Password?</h4>
+        <button fdprocessedid="8nkxns">Login</button>
+        <h5>Not a Member? <span style="color:rgb(0, 187, 255)">Signup</span></h5>
+    </div>
+    <script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+    </script>
+    <span id="PING_IFRAME_FORM_DETECTION" style="display: none;"></span>
+</body>
+</html>
