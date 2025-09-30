@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>3D Login Page</title>
+    <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                height: 100vh;
+                width: 100vw;
+                overflow: hidden;
+            }
+            .img {
+                position: absolute;
+                width: 100vw;
+                top: 0;
+                left: 0;
+                z-index: -2;    
+            }
+            div
+            {  
+                border:5px solid black;
+                width:fit-content;
+                margin:auto;
+                padding:50px;
+                border-radius: 5%;
+                background-color: wheat;
+                align-items: center;
+                display: flex;
+                justify-content: space-evenly;
+                flex-direction: column;
+                text-decoration: underline;
+                margin-left: 40em;
+                margin-top: 15em;
+                box-shadow:10px 10px 20px rgb(90, 121, 122);
+            }
+            input
+            {
+                border:2px solid black;
+                margin-top: 10px;
+                margin-bottom:5px;
+                border-radius: 5px;
+                box-shadow: 5px 5px 10px cornflowerblue;
+            }    
+            h1
+            {
+                margin-left:0em;
+                
+            }
+            button
+            {
+                border-radius:10px;
+                font-size:20px;
+                width:200px;
+                box-shadow: 5px 5px 10px rgb(230, 169, 181);
+                margin-top: 1em;
+            }
+            h4
+            {
+                color:grey;
+                margin-top: 5px;
+            }
+            h5{
+                margin-top: 30px;
+            }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="/img4.jpg" class="box">
+        <h1 style="color:black">Login</h1>
+        <input type="text" placeholder="Username:" ><br>
+        <input type="password" placeholder="Password:" >
+        <h4>Forget Password?</h4>
+        <button >Login</button>
+        <h5>Not a Member? <span style="color:rgb(0, 187, 255)">Signup</span></h5>
+    </div>
+    <img src="/img1.jpg" alt="photo" class="img">
+</body>
+</html>

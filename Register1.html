@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        div{
+            background-color: rgb(229, 239, 248);
+            height: 630px;
+            font-family:auto; 
+            justify-content: space-evenly; 
+            align-items: center;
+            border:5px solid black;
+            width:20em;
+            height: 30em;
+            margin:auto;
+            padding:50px;
+            border-radius: 2%;
+            display: flex;
+            flex-direction: column;
+        }
+        h1{
+            font-size: 35px; 
+            text-align: center; 
+            padding-bottom: 1.2em;
+            text-decoration: underline;
+        }
+        body{
+            background-color: rgb(187, 174, 247);
+            padding-top: 6.5em;
+        }
+        input{
+            padding: 9px;
+            margin: 0.5em;
+            width: 20em;
+            border-radius: 5px;
+            box-shadow: 5px 5px 10px rgb(137, 202, 243);
+            text-decoration: underline;
+            background-color: rgb(235, 233, 233);
+        }
+        button{
+            border-radius:5px;
+            font-size:20px;
+            width:150px;
+            box-shadow: 5px 5px 10px rgb(137, 202, 243);
+            margin-top: 1.5em;
+            text-decoration: underline;
+            background-color:rgb(235, 11, 11);
+            padding: 5px;
+        }
+        select{
+            padding: 9px;
+            margin: 0.5em;
+            width: 22em;
+            border-radius: 5px;
+            box-shadow: 5px 5px 10px rgb(137, 202, 243);
+            text-decoration: underline;
+            background-color: rgb(235, 233, 233);
+            border: 2px dashed black;
+        }
+    </style>
+</head>
+<body>
+    <div >
+        <h1> Registration Form </h1>
+        <input type="text" placeholder="Name*" ><br>
+        <input type="email" placeholder="Email*" ><br>
+        <input type="number" placeholder="Phone*" ><br>
+        <select type="text" placeholder="Subject*" >
+            <option>Select</option>
+            <option>TOC</option>
+            <option>IP</option>
+            <option>NSC</option>
+            <option>AI</option>
+        </select><br>
+        <input type="text" placeholder="Message*" >
+        <button>Submit</button>
+    </div>
+</body>
+</html>
