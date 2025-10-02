@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+            cursor: pointer;
+        }
+        .bn{
+           background-color: rgb(235, 223, 223);
+            height: 20vh;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            padding-left: 2em;
+            font-size: 2em;        
+        }
+        .bn:hover{
+             background-color: #cac7ff;
+             transition: 2s;
+        }
+        .bn1{
+            background-color: rgb(235, 223, 223);
+            height: 20vh;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            padding-left: 2em;
+            font-size: 2em;
+        }
+        .bn1:hover{
+             background-color:#d7cdfe ;
+             transition: 2s;
+        }
+        .bn2{
+            background-color: rgb(235, 223, 223);
+            height: 20vh;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            padding-left: 2em;
+            font-size: 2em;
+        }
+        .bn2:hover{
+             background-color: #e4d3fc;
+             transition: 2s;
+        }
+        .bn3{
+            background-color:rgb(235, 223, 223);
+            height: 20vh;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            padding-left: 2em;
+            font-size: 2em;
+        }
+        .bn3:hover{
+             background-color:#f1dafb ;
+             transition: 2s;
+        }
+        .bn4{
+            background-color: rgb(235, 223, 223);
+            height: 20vh;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            padding-left: 2em;
+            font-size: 2em;
+        }
+        .bn4:hover{
+             background-color: #fee0f9;
+             transition: 2s;
+        }
+        .buy{
+            height: 1.6em;
+            width:10em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 40px;
+            color: rgb(179, 89, 149);
+            font-size: 25px;
+            margin-left:9em;
+            font-family: cursive;
+        }
+        .buy:hover{
+            background-color:rgb(100, 2, 20) ;
+            transition: 1s;
+        }
+        .tfpb{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 13em;
+            font-size: 24px;
+            font-family: cursive;
+        }
+        span{
+            padding-left: 1.5em;
+            
+        }
+        .i{
+            padding-left: 1em;
+        }
+        .tf{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 17em;
+            font-size: 24px;
+            font-family: cursive;
+        }
+        .bt{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            color: rgb(24, 162, 49);
+            font-size: 25px;
+            margin-left:11.5em;
+            font-family: cursive;
+        }
+        .bt1{
+            height: 1.6em;
+            width:5em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 40px;
+            color: rgb(59, 42, 244);
+            font-size: 25px;
+            margin-left:0.3em;
+            font-family: cursive;
+        }
+        .bt1:hover{
+            background-color:rgb(76, 170, 241) ;
+            transition: 1s;
+        }
+        .tfp{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 15em;
+            font-size: 24px;
+            font-family: cursive;
+        }
+        .bt2{
+            height: 1.6em;
+            width:5em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 40px;
+            color: rgb(199, 176, 62);
+            font-size: 25px;
+            margin-left:9em;
+            font-family: cursive;
+        }
+        .bt2:hover{
+            border: 3px solid darkslategray;
+            transition: 0s;
+        }
+        .bt3{
+            height: 1.6em;
+            width:5em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 40px;
+            color: rgb(89, 32, 143);
+            font-size: 25px;
+            margin-left:0.3em;
+            font-family: cursive;
+        }
+        .bt3:hover{
+            background-color:rgb(163, 114, 241) ;
+            transition: 1s;
+        }
+        .tft{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 16em;
+            font-size: 24px;
+            font-family: cursive;
+        }
+        .bt4{
+            height: 1.5em;
+            width:5em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 40px;
+            color: rgb(231, 7, 216);
+            font-size: 25px;
+            margin-left:9em;
+            font-family: cursive;
+        }
+        .bt5{
+            height: 1.5em;
+            width:5em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 40px;
+            color: rgb(133, 118, 45);
+            font-size: 25px;
+            margin-left:0em;
+            font-family: cursive;
+            
+        }
+        .bt5:hover{
+            border: 3px solid rgb(184, 22, 22);
+            transition: 0s;
+        }
+        .tft1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 23em;
+            font-size: 28px;
+            font-family: cursive;
+        }
+    </style>
+</head>
+<body>
+    <div >
+        <div class="bn">
+            <b>Mohini</b>
+            <div class="tfpb">
+            <span>Tour</span>
+            <span>Features</span>
+            <span>Pricing</span>
+            <span>Blog</span>
+            <div class="i"><i class="fa-brands fa-dribbble fa-beat-fade"></i></div>
+            <div class="i"><i class="fa-brands fa-instagram fa-beat-fade"></i></div>
+            <span>Bē</span>
+            </div>
+            <div class="buy" >Buy on App Store</div>
+        </div>
+        <div class="bn1">
+            <b>Anjali</b>
+            <div class="tf">
+            <span>Home</span>
+            <span>Features</span>
+            <span>Blog</span>
+            <span>Shop</span>
+            <div class="i"><i class="fa-brands fa-google fa-flip"></i></div>
+            </div>
+            <div class="bt">Sign In</div>
+            <div class="bt1">Sign Up</div>
+        </div>
+        <div class="bn2">
+            <b>Anshul</b>
+            <div class="tfp">
+            <span>Get The App</span>
+            <span>Features</span>
+            <span>About</span>
+            <span>F.A.Q</span>
+            
+            </div>
+            <div class="bt2">Sign In</div>
+            <div class="bt3">Sign Up</div>
+        </div>
+        <div class="bn3">
+            <b>Vidhi</b>
+            <div class="tft">
+            <span>Tour</span>
+            <span>Prices</span>
+            <span>About</span>
+            <span>F.A.Q</span>
+            <span>Support</span>
+            </div>
+            <div class="bt4">Login</div>
+            <div class="bt5">Sign Up</div>
+        </div>
+        <div class="bn4">
+            <b>Khushi</b>
+            <div class="tft1">
+            <span>Tour</span>
+            <span>Features</span>
+            <span>Pricing</span>
+            <span>Blog</span>
+            <div class="i"><i class="fa-brands fa-google-plus-g fa-bounce"></i></div>
+            <div class="i"><i class="fa-brands fa-facebook fa-shake"></i></div>
+            <div class="i"><i class="fa-brands fa-twitter fa-flip"></i></div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
